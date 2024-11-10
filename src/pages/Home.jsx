@@ -67,7 +67,6 @@ function Home() {
               </div>
             </div>
             <div className="flex flex-col gap-3 h-full justify-center items-center w-full px-3 z-0 rounded-e-xl border-inherit">
-              <SearchBar className={"sm:w-1/2 block"} />
               <div className="shadow-lg flext justify-center items-center rounded-xl w-full max-w-[800px] border  overflow-hidden border-inherit">
                 <img
                   className="sm:object-cover object-center w-full rounded-xl border-inherit"
