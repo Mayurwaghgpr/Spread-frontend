@@ -8,6 +8,7 @@ export default defineConfig({
       '/api': 'https://spread-backend.vercel.app/',
         changeOrigin: true,
         secure: true,
+        
     }
   },
   plugins: [react()],
