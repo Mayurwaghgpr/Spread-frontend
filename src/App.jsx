@@ -12,6 +12,7 @@ import ProtectedRoute from "./utils/ProtectedRoutes";
 import PersistentUser from "./utils/persistentUser";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import LoaderScreen from "./component/loaders/loaderScreen";
+import SearchBar from "./component/homeComp/searchBar";
 
 // Lazy load components
 
@@ -166,6 +167,14 @@ function App() {
             element={
               <ProtectedRoute>
                 <FullBlogView />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/explore"
+            element={
+              <ProtectedRoute>
+                <SearchBar />
               </ProtectedRoute>
             }
           />

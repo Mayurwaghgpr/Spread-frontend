@@ -61,25 +61,15 @@ function MainNavBar() {
                 ref={searchRef}
                 className="flex sm:justify-end w-full sm:items-center items-start"
               >
-                <SearchBar
-                  className={`sm:flex flex-col hidden justify-center items-center gap-1 transition-all duration-700 ease-linear bg-gray-100 rounded-full ${
-                    isSearchBar
-                      ? "w-full md:w-[300px] lg:w-[400px] opacity-100"
-                      : "w-0 opacity-0"
-                  }`}
-                  disable={false}
-                  isSearchBar={isSearchBar}
-                />
-
-                <button
+                <Link
                   className={`transition-all cursor-pointer z-20 duration-100 delay-200 ease-in ${
                     isSearchBar ? "opacity-0 cursor-default " : "opacity-100 "
                   }`}
-                  onClick={() => setSearchBar(true)}
+                  to={"/explore"}
                   disabled={isSearchBar}
                 >
                   <i className="bi bi-search"></i>
-                </button>
+                </Link>
               </div>
             )}
 
@@ -92,7 +82,7 @@ function MainNavBar() {
                   tabIndex="-1"
                   title="Write"
                 >
-                  <i class="bi bi-feather"></i>
+                  <i className="bi bi-feather"></i>
                 </Link>
               )}
             {isLogin && (

@@ -125,7 +125,7 @@ function SignUp() {
             <div className="mb-4 w-full">
               <button
                 type="submit"
-                className="bg-slate-500 p-3 w-full text-center rounded-lg"
+                className="bg-gray-800 p-3 w-full text-center rounded-lg"
                 disabled={isLoading}
               >
                 {isLoading ? "Signing Up..." : "Sign Up"}

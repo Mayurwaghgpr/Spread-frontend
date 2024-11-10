@@ -60,7 +60,7 @@ function SignIn() {
   if (!isLogin) {
     return (
       <section
-        className={`sm:flex relative animate-fedin.2s justify-evenly z-50 items-center h-[47rem] flex-col   top-0 left-0 bottom-0 right-0 bg-[#ffff] dark:bg-[#222222]   dark:*:border-[#383838] `}
+        className={`sm:flex relative animate-fedin.2s justify-evenly z-50 items-center h-[47rem] flex-col   top-0 left-0 bottom-0 right-0 bg-[#ffff] dark:bg-black   dark:*:border-[#383838] `}
       >
         {isError && (
           <div className="text-red-500 my-4 w-full flex justify-center  bg-red-100 py-2 ">
@@ -139,7 +139,7 @@ function SignIn() {
                   setpassVisible(true);
                 }}
                 type="button"
-                className={`bg-slate-400 min-w-[200px] text-white p-3 w-full   rounded-lg ${
+                className={`bg-gray-800 min-w-[200px] text-white p-3 w-full   rounded-lg ${
                   isLoading && "cursor-wait bg-blue-100"
                 }`}
                 disabled={userRef.current?.value}

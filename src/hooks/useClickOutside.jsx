@@ -5,7 +5,6 @@ function useClickOutside(MenuRef, searchRef) {
   const { isLogin, user } = useSelector((state) => state.auth);
   const [isFixed, setFixed] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isSearchBar, setSearchBar] = useState(false);
   const [menuId, setMenuId] = useState("");
   useEffect(() => {
     function handleClickOutside(event) {
@@ -51,8 +50,6 @@ function useClickOutside(MenuRef, searchRef) {
     isFixed,
     isMenuOpen,
     setIsMenuOpen,
-    isSearchBar,
-    setSearchBar,
     menuId,
     setMenuId,
   };
