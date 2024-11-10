@@ -25,7 +25,7 @@ function Home() {
           >
             <source src={bgvideo} type="video/mp4" />
           </video>
-          <div className="bg-inherit p-7 w-[50%] bg-opacity-20 backdrop-blur-lg  rounded-lg  flex flex-col gap-2 border-inherit">
+          <div className="bg-white p-7 w-[50%] bg-opacity-20 backdrop-blur-lg  rounded-lg  flex flex-col gap-2 border-inherit">
             <h1 className="xl:text-2xl lg:text-xl text-lg mb-4">...Spread</h1>
             <h2 className="xl:text-5xl lg:text-4xl sm:text-3xl text-2xl font-[440]">
               Unleash Your Stories, Inspire the World
