@@ -15,7 +15,7 @@ export const LoginUser = async (signinConfig) => {
 
 export const RegisterUser = async (signUpcofig) => {
   try {
-    const result = await axios.put(`${BASE_URL}/auth/signup`, signUpcofig, {
+    const result = await axios.post(`${BASE_URL}/auth/signup`, signUpcofig, {
       withCredentials: true,
     });
     return result.data;
