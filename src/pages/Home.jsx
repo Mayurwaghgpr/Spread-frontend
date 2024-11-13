@@ -14,7 +14,7 @@ function Home() {
   return (
     <>
       <main className="relative dark:*:border-[#383838]">
-        <div className="relative min-h-[40rem] flex justify-center items-center px-10 sm:py-24 sm:mb-1 py-10 text-start h-full border-inherit">
+        <div className="relative min-h-[50rem] flex justify-center items-center px-10 sm:py-24 sm:mb-1 py-10 text-start h-full border-inherit">
           <video
             className="w-full animate-fedin1s  absolute object-cover object-center h-full left-0 top-0 -z-1"
             id="background-video"
@@ -45,7 +45,7 @@ function Home() {
           </div>
         </div>
 
-        <div
+        {/* <div
           className={
             "w-full sm:px-15 lg:px-20 min-h-[40rem] flex items-start *:border-inherit"
           }
@@ -60,10 +60,10 @@ function Home() {
               <div className="w-full text-center font-[440] h-full flex flex-col gap-2 items-end mt-10 mb-10 sm:items-center break-words text-2xl sm:text-5xl sm:px-8 z-30 border-inherit">
                 <h1>Explore stories and new ideas</h1>
 
-                {/* <p className="text-xs">
+                <p className="text-xs">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Corrupti possimus labore facere repudianda e animi.
-                </p> */}
+                </p>
               </div>
             </div>
             <div className="flex flex-col gap-3 h-full justify-center items-center w-full px-3 z-0 rounded-e-xl border-inherit">
@@ -76,7 +76,7 @@ function Home() {
               </div>
             </div>
           </article>
-        </div>
+        </div> */}
       </main>
       <Footer />
     </>

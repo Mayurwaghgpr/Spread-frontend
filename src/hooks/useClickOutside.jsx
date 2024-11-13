@@ -12,22 +12,15 @@ function useClickOutside(MenuRef, searchRef) {
         setMenuId("");
         setIsMenuOpen(false);
       }
-      if (searchRef?.current && !searchRef?.current.contains(event.target)) {
-        setSearchBar(false);
-      }
     }
 
     document.addEventListener("mousedown", handleClickOutside);
-
-    if (!searchRef) {
-      // document.addEventListener("scroll", handleClickOutside);
-    }
 
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
       // document.removeEventListener("scroll", handleClickOutside);
     };
-  }, [MenuRef, searchRef]);
+  }, [MenuRef]);
 
   useEffect(() => {
     const handleScroll = () => {
