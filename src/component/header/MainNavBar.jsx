@@ -36,7 +36,7 @@ function MainNavBar() {
 
   return (
     <header
-      className={`fixed top-0  transform-all duration-300 ease-in-out border-b bg-white  border-inherit dark:border-[#383838] ${
+      className={`transform-all duration-300 ease-in-out border-b bg-white  border-inherit dark:border-[#383838] ${
         !isLogin ? " bg-opacity-50 backdrop-blur-lg" : "dark:bg-[#222222]"
       } w-full z-40`}
     >
