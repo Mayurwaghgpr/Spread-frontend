@@ -4,7 +4,6 @@ const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 function useProfileApi() {
   const fetchUserProfile = async (id) => {
-    console.log("use", id);
     try {
       const response = await axios.get(`${BASE_URL}/user/profile/${id}`, {
         withCredentials: true,

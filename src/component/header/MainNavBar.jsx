@@ -116,13 +116,13 @@ function MainNavBar() {
             ) : (
               <div className="flex gap-3 justify-end w-full items-center text-sm">
                 <Link
-                  to="/signin"
+                  to="/auth/signin"
                   className="transition-colors duration-500 rounded-3xl sm:px-3 py-2"
                 >
                   SignIn
                 </Link>
                 <Link
-                  to="/signup"
+                  to="/auth/signup"
                   className="border border-inherit transition-colors duration-500 rounded-full px-2 py-1"
                 >
                   Start Writing

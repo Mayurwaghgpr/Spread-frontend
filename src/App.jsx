@@ -106,11 +106,11 @@ function App() {
             }
           />
           <Route
-            path="/signin"
+            path="/auth/signin"
             element={!isLogin ? <SignIn /> : <Navigate to="/" replace />}
           />
           <Route
-            path="/signup"
+            path="/auth/signup"
             element={!isLogin ? <SignUp /> : <Navigate to="/" replace />}
           />
           <Route path="/about" element={<About />} />
