@@ -14,7 +14,7 @@ function Home() {
   return (
     <>
       <main className="relative dark:*:border-[#383838]">
-        <div className="relative min-h-[50rem] flex justify-center items-center px-10 sm:py-24 sm:mb-1 py-10 text-start h-full border-inherit">
+        <div className="relative min-h-[48rem] flex justify-center items-center px-10 sm:py-24  py-10 text-start h-full border-inherit">
           <video
             className="w-full animate-fedin1s  absolute object-cover object-center h-full left-0 top-0 -z-1"
             id="background-video"

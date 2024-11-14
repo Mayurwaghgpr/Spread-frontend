@@ -36,11 +36,15 @@ function MainNavBar() {
 
   return (
     <header
-      className={`transform-all duration-300 ease-in-out border-b bg-white  border-inherit dark:border-[#383838] ${
-        !isLogin ? " bg-opacity-50 backdrop-blur-lg" : "dark:bg-[#222222]"
-      } w-full z-40`}
+      className={`fixed top-0 transform-all duration-300 ease-in-out flex  justify-center w-full z-40`}
     >
-      <nav className="relative w-full z-10 py-3 px-7 sm:px-20 lg:px-28">
+      <nav
+        className={`relative  z-10 w-full  py-3 px-7 sm:px-20 lg:px-28 bg-white border border-inherit dark:border-[#383838]${
+          !isLogin
+            ? " bg-opacity-50 backdrop-blur-lg w-[90rem]  rounded-lg m-2"
+            : "dark:bg-[#222222] "
+        } `}
+      >
         <div className="flex items-center justify-between w-full m-auto">
           <div className="py-1">
             <Link to="/" className="font-medium sm:text-2xl lg:text-3xl">
