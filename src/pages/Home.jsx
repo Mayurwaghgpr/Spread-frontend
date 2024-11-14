@@ -14,19 +14,25 @@ function Home() {
   return (
     <>
       <main className="relative dark:*:border-[#383838]">
-        <div className="relative min-h-[48rem] flex justify-center items-center px-10 sm:py-24  py-10 text-start h-full border-inherit">
-          <video
-            className="w-full animate-fedin1s  absolute object-cover object-center h-full left-0 top-0 -z-1"
-            id="background-video"
-            autoPlay
-            muted
-            loop
-            playsInline
-          >
-            <source src={bgvideo} type="video/mp4" />
-          </video>
-          <div className="bg-white p-7 w-[50%] bg-opacity-20 backdrop-blur-lg  rounded-lg  flex flex-col gap-2 border-inherit">
-            <h1 className="xl:text-2xl lg:text-xl text-lg mb-4">...Spread</h1>
+        <div className="relative min-h-[45rem] flex  items-center px-10 sm:py-24  py-10 text-start h-full border-inherit">
+          <div className=" absolute bg-black rounded-full min-w-fit min-h-fit  right-10  top-20">
+            <video
+              className=" sm:size-[35rem] size-[10rem] m-1 border-white border-2 animate-fedin1s  object-cover object-center rounded-full "
+              id="background-video"
+              autoPlay
+              muted
+              loop
+              playsInline
+            >
+              <source src={bgvideo} type="video/mp4" />
+            </video>
+          </div>
+
+          <div className=" p-7 sm:w-[50%] z-10  rounded-lg  flex flex-col gap-2 border-inherit">
+            <h1 className="xl:text-2xl lg:text-xl flex  items-center text-lg mb-4">
+              <span>Spread.. </span>
+              <i className="bi bi-feather pb-2"></i>
+            </h1>
             <h2 className="xl:text-5xl lg:text-4xl sm:text-3xl text-2xl font-[440]">
               Unleash Your Stories, Inspire the World
             </h2>

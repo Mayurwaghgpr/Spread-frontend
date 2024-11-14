@@ -39,19 +39,19 @@ function MainNavBar() {
       className={`fixed top-0 transform-all duration-300 ease-in-out flex  justify-center w-full z-40`}
     >
       <nav
-        className={`relative  z-10 w-full  py-3 px-7 sm:px-20 lg:px-28 bg-white border border-inherit dark:border-[#383838]${
+        className={`relative  z-10 w-full  py-3 px-7 sm:px-20 lg:px-28 bg-slate-200 border border-inherit dark:border-[#383838]${
           !isLogin
-            ? " bg-opacity-50 backdrop-blur-lg w-[90rem]  rounded-lg m-2"
+            ? " bg-opacity-20 backdrop-blur-lg w-[80rem]  rounded-xl m-2"
             : "dark:bg-[#222222] "
         } `}
       >
         <div className="flex items-center justify-between w-full m-auto">
           <div className="py-1">
-            <Link to="/" className="font-medium sm:text-2xl lg:text-3xl">
+            <Link to="/" className=" sm:text-2xl lg:text-3xl">
               Spread
             </Link>
           </div>
-          <div className="flex gap-8 justify-end items-center sm:w-full font-light">
+          <div className="flex gap-8 justify-end items-center sm:w-full ">
             {location.pathname === "/write" && isLogin && (
               <Link
                 to={"/write/publish"}
@@ -90,7 +90,7 @@ function MainNavBar() {
                 </Link>
               )}
             {isLogin && (
-              <div className="relative sm:text-xl font-thin">
+              <div className="relative sm:text-xl">
                 <i className="bi bi-bell"></i>
                 <span className="absolute top-0 flex h-3 w-3 -right-1">
                   <span className="animate-ping absolute inline-flex h-[6px] w-[6px] rounded-full bg-slate-400 opacity-75"></span>
@@ -118,7 +118,7 @@ function MainNavBar() {
                 )}
               </div>
             ) : (
-              <div className="flex gap-3 justify-end w-full items-center text-sm">
+              <div className="flex gap-3 justify-end w-full items-center text-lg">
                 <Link
                   to="/auth/signin"
                   className="transition-colors duration-500 rounded-3xl sm:px-3 py-2"
@@ -127,7 +127,7 @@ function MainNavBar() {
                 </Link>
                 <Link
                   to="/auth/signup"
-                  className="border border-inherit transition-colors duration-500 rounded-full px-2 py-1"
+                  className="border border-inherit transition-colors duration-500 rounded-full p-2"
                 >
                   Start Writing
                 </Link>
